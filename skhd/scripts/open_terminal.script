@@ -1,10 +1,10 @@
-if application "Terminal" is running then
-    tell application "Terminal"
+if application "iTerm" is running then
+    tell application "iTerm"
         do script ""
         activate
     end tell
 else
-    tell application "Terminal"
+    tell application "iTerm"
         activate
     end tell
 end if
