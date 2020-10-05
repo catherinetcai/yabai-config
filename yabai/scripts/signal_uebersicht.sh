@@ -9,7 +9,11 @@
 # If this ever breaks we can always fall back to using applescript script to regain functionality.
 if [[ $(type -P websocat) = "" || "$compatibility_mode" = "true" ]]; then
    echo "Falling back to applescript, websocat not installed. https://github.com/vi/websocat"
-   osascript -e 'tell application id "tracesOf.Uebersicht" to refresh widget id "nibar-yabai-jsx"'
+   # osascript -e 'tell application id "tracesOf.Uebersicht" to refresh widget id "nibar-yabai-jsx"'
+   osascript -e 'tell application id "tracesOf.Uebersicht" to refresh widget id "simple-bar-spaces-jsx"'
+   # osascript -e 'tell application id "tracesOf.Uebersicht" to refresh widget id "simple-bar-spaces-2-jsx"'
+   # osascript -e 'tell application id "tracesOf.Uebersicht" to refresh widget id "simple-bar-spaces-3-jsx"'
+   osascript -e 'tell application id "tracesOf.Uebersicht" to refresh widget id "simple-bar-process-jsx"'
    return
 fi
 
